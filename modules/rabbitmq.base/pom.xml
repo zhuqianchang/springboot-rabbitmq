@@ -10,15 +10,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>rabbitmq.producer</artifactId>
+    <artifactId>rabbitmq.base</artifactId>
     <version>0.0.1</version>
 
     <dependencies>
         <dependency>
-            <groupId>indi.zqc</groupId>
-            <artifactId>rabbitmq.base</artifactId>
-            <version>${project.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
     </dependencies>
+
 
 </project>

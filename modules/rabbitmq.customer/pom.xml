@@ -15,9 +15,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
-            <version>${spring.boot.version}</version>
+            <groupId>indi.zqc</groupId>
+            <artifactId>rabbitmq.base</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

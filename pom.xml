@@ -4,10 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>indi.zqc</groupId>
-    <artifactId>rabbitmq</artifactId>
+    <artifactId>rabbitmq.parent</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1</version>
     <modules>
+        <module>modules/rabbitmq.base</module>
         <module>modules/rabbitmq.customer</module>
         <module>modules/rabbitmq.producer</module>
     </modules>
@@ -20,12 +21,6 @@
         <dependencies>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-                <version>${spring.boot.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
                 <version>${spring.boot.version}</version>
                 <scope>test</scope>
@@ -35,6 +30,12 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-amqp</artifactId>
                 <version>${spring.boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>indi.zqc</groupId>
+                <artifactId>rabbitmq.base</artifactId>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
